@@ -1,0 +1,433 @@
+.firstHeader{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+.firstList{
+    display: flex;
+    gap: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(28, 41, 77, 0.8);
+}
+.secondList{
+    display: flex;
+    gap: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(28, 41, 77, 0.8);
+}
+.infoIcon{
+    color: green;
+    margin-left: -10px;
+}
+.hachmarat{
+    width: 123px;
+    height: 44px;
+    background: #FF7A00;
+    color: white;
+    margin-left: -5px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+.marathach{
+    background: #FFFFFF;
+    border: 1px solid #DFE0E1;
+    border-radius: 5px 0 0 5px;
+    width: 420px;
+    height: 40px;
+}
+.searchBar{
+    display: flex;
+    gap: 20px;
+    margin-left: 40px;
+}
+.secondHeader{
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.catalog{
+    width: 1300px;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+}
+.catalogLists{
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;
+}
+.catalogList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;    
+    color: #1C294D;
+    
+}
+.searchAndList{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+}
+.userList{
+    display: flex;
+    gap: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1C294D;
+}
+.anotherList{
+    display: flex;
+    gap: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1C294D;
+    font-family: 'Roboto';
+}
+.discountTag{
+    color: #FF283D;
+}
+main{
+    background: #E5E5E5;
+}
+.someImages{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.sliderButtons{
+    border-radius: 5px; 
+    border: 1px solid rgba(28, 41, 77, 0.15); 
+    color: rgba(42, 61, 72, 0.5); 
+    width: 28px;
+    height: 28px;
+}
+.newBooksTitle .second{
+    border-radius: 0 5px 5px 0;
+    
+}
+.newBooksTitle .first{
+    border-radius: 5px 0 0 5px;
+    margin-right: -5px;
+}
+.someImagesSmall{
+    display: flex;
+    gap: 30px;
+}
+.twoEqualThree{
+    background-image: url("img/2=3.png");
+    max-width: 750px;
+    max-height: 350px;
+}
+.someImagesSliderButtons{
+    display: flex;
+    justify-content: center;
+    gap: 600px;
+    position: relative;
+    bottom: 100%;
+    align-items: center;
+    height: 350px;
+}
+.someImagesSmallMobile{
+    display: none;
+}
+.someImagesBig{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.bookOfTheDay{
+    max-width: 360px;
+    max-height: 520px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.bookOfTheDayText{
+    color: #1C294D;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+.bookOfTheDayTime{
+    background: rgba(255, 122, 0, 0.15);
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    width: 68px;
+    vertical-align: middle;
+    height: 25px;
+    text-align: center;
+    color: #FF7A00;
+}
+.aboutBookText{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.aboutBookImage{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.cartButton{
+    background: #FFFFFF;
+    width: 146px;
+    height: 40px;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+}
+.favButton{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+.aboutBookMisc{
+    margin-left: 10px;
+}
+.up{
+    padding-bottom: 10px;
+}
+.miscOne{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 5px;
+    color: rgba(28, 41, 77, 0.5);
+}
+.miscPrice{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 5px;
+    color: #1C294D;
+
+}
+.fa-cart-shopping{
+    color: #FF7A00;
+}
+.newBooks{
+    max-width: 1300px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.newBooksTitle{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.newBooksBlock{
+    width: 325px;
+    height: 500px;
+    border-right: 1px solid #1c294d44;
+    border-bottom: 1px solid #1c294d44;
+}
+.newBooksBlock:last-child{
+    border-right: 0px;
+}
+.newBooksBlocks{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #1c294d44;
+}
+.newBlockSeller{
+    border-radius: 5px;
+    width: 66px;
+    height: 15px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    position: relative;
+    line-height: 15px;
+}
+.newBlockAction{
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    position: relative;
+    font-weight: 700;
+    font-size: 12px;
+    width: 34px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+.textPositioning{
+    bottom: 43%;
+    left: 20%;
+    position: relative;
+}
+.blockImage{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+.newBooksBlock .aboutBookMisc{
+    margin-top: -40px;
+}
+.rating{
+    background-color: #fbc12d28;
+    color: #FBC02D;
+    max-width: 52px;
+    height: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    padding-right: 5px;
+    line-height: 24px;
+    border-radius: 5px;
+}
+.ratingAndLike{
+    display: flex;
+    margin-top: -15px;
+}
+.like{
+    background-color: #7987cb42;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    width: 144px;
+    height: 25px;
+    color: #7986CB;
+    margin-left: 15px;
+    padding-left: 5px;
+    font-size: 12px;
+    line-height: 24px;
+}
+.allBooksButton{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1C294D;
+    border: none;
+    background-color: white;
+}
+.newsSubscribe{
+    width: 1300px;
+    margin: 0 auto;
+    background-color: #0288D1;
+    border-radius: 5px;
+    height: 80px;
+    display: flex;
+    justify-content: ;
+    align-items: center;
+    margin-top: 30px;
+}
+.specials{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.specialsBlock{
+    background-color: white;
+    height: 150px;
+    width: 250px;
+}
+
+@media (max-width: 768px){
+    body{
+        max-width: 375px;
+    }
+    .firstHeader,.secondHeader{
+        display: none;
+    }
+    .someImages{
+        max-width: 355px;
+        flex-direction: column;
+    }
+    .twoEqualThree{
+        background-size: 355px 175px;
+    }
+    .someImagesSliderButtons{
+        display: none;
+    }
+    .newsSubscribe{
+        flex-direction: column;
+        max-width: 355px;
+        max-height: 190px;
+    }
+    .someImagesSmall{
+        display: none;
+    }
+    .someImages{
+        gap: 10px;
+    }
+    .someImagesSmallMobile{
+        display: inline-block;
+        flex-direction: column;
+        display: flex;
+        gap: 10px;
+    }
+    .bigImage{
+        max-width: 355px;
+        max-height: 175px;
+    }
+    .third, .four{
+        display: none;
+    }
+    .newBooks{
+        max-width: 355px;
+    }
+    .specials{
+        max-width: 375px;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 10px;
+    }
+    .specialsBlock{
+        width: 355px;
+        max-height: 170px;
+    }
+    .newBooksBlock{
+        max-width: 177px;
+    }
+    .ratingAndLike{
+        flex-direction: column;
+    }
+    .cartButton{
+        max-width: 117px;
+    }
+
+}
