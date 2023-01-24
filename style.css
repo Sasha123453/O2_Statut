@@ -84,6 +84,9 @@ ul{
     justify-content: space-between;
     max-width: 1300px;
 }
+.mobileHeader{
+    display: none;
+}
 .userList{
     display: flex;
     gap: 25px;
@@ -370,32 +373,26 @@ main{
     body{
         max-width: 375px;
     }
-    .firstHeader,.secondHeader{
+    .firstHeader,.secondHeader, .someImagesSmall, .someImagesSliderButtons{
         display: none;
     }
     .someImages{
         max-width: 355px;
+        margin-top: 10px;
         flex-direction: column;
     }
     .twoEqualThree{
         background-size: 355px 175px;
-    }
-    .someImagesSliderButtons{
-        display: none;
     }
     .newsSubscribe{
         flex-direction: column;
         max-width: 355px;
         max-height: 190px;
     }
-    .someImagesSmall{
-        display: none;
-    }
     .someImages{
         gap: 10px;
     }
     .someImagesSmallMobile{
-        display: inline-block;
         flex-direction: column;
         display: flex;
         gap: 10px;
@@ -407,8 +404,37 @@ main{
     .third, .four{
         display: none;
     }
+    .mobileHeader{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .mobileSearch{
+        background: #F7F7F7;
+        border-radius: 5px;
+        color: rgba(28, 41, 77, 0.5);
+        width: 195px;
+        height: 40px;
+        outline: none;
+        border: none;
+    }
+    .mobileSearchButton{
+        border: none;
+        width: 18px;
+        height: 18px;
+        background: #F7F7F7;
+        position: relative;
+        right: 15%;
+        top: 0px;
+        color: rgba(28, 41, 77, 0.5);
+    }
     .newBooks{
         max-width: 355px;
+    }
+    .cartButtonMobile{
+        border: none;
+        outline: none;
+        background-color: white;
     }
     .specials{
         max-width: 375px;
