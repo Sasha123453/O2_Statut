@@ -31,7 +31,7 @@ ul{
     color: green;
     margin-left: -10px;
 }
-.hachmarat{
+.submitButton{
     width: 123px;
     height: 44px;
     background: #FF7A00;
@@ -40,7 +40,7 @@ ul{
     border: none;
     border-radius: 0 5px 5px 0;
 }
-.marathach{
+.search{
     background: #FFFFFF;
     border: 1px solid #DFE0E1;
     border-radius: 5px 0 0 5px;
