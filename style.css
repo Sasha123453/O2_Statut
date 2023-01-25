@@ -58,20 +58,24 @@ ul{
     margin-top: 30px;
 }
 .catalog{
-    width: 1300px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
     margin: 0 auto;
+    z-index: 1;
     display: none;
-    position: relative;
 }
 .catalogLists{
     display: flex;
     justify-content: flex-start;
     gap: 70px;
+    padding-left: 7%;
 }
 .catalogList{
     display: flex;
     flex-direction: column;
-    gap: 20px;font-family: 'Roboto';
+    gap: 20px;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
