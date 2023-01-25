@@ -40,7 +40,7 @@
       </div>
       <div>
         <ul class="anotherList">
-          <li><i class="fa-brands fa-android"></i>&nbsp;&nbsp;&nbsp;Каталог</li>
+          <li><button style="border: none; outline: none; background-color: white;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;Каталог</button></li>
           <li>Авторы</li>
           <li>Новинки</li>
           <li class="discountTag"><i class="fa-solid fa-tag"></i>&nbsp;&nbsp;&nbsp;Скидки</li>
@@ -135,8 +135,18 @@
           </div>
         </div>
         <div class="someImagesSmall">
-          <div class=""><img src="img/Rectangle 911.png" alt=""></div>
-          <div><img src="img/Rectangle 910.png" alt=""></div>
+          <div class="AdImage">
+            <p class="AdImageFirst">Бесплатно доставим
+              ваш заказ при
+              покупке от 2000 ₽</p>
+            <img src="img/illustration_2.png">
+          </div>
+          <div class="AdImage">
+            <p class="AdImageSecond">Скидка
+              при регистрации
+              до 15%</p>
+            <img src="img/illustration_1.png" alt="">
+          </div>
         </div>
       </div>
       <div class="bookOfTheDay">
@@ -147,15 +157,25 @@
           <p>Инвестирование: способы, риски, субъекты : монография</p>
           <p class="miscOne">Майфат А.В.</p>
           <p class="miscPrice">4 450 ₽ </p>
-          <div>
-            <button class="cartButton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;В корзину</button>
+          <div >
+            <button class="cartButton mobileDayButton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;В корзину</button>
             <button class="favButton"><i class="fa-solid fa-bookmark"></i></button>
           </div>
         </div>
       </div>
       <div class="someImagesSmallMobile">
-        <div class=""><img src="img/Rectangle 911.png" alt=""></div>
-        <div><img src="img/Rectangle 910.png" alt=""></div>
+        <div class="AdImage">
+          <p class="AdImageFirst">Бесплатно доставим
+            ваш заказ при
+            покупке от 2000 ₽</p>
+          <img src="img/illustration_2.png">
+        </div>
+        <div class="AdImage">
+          <p class="AdImageSecond">Скидка
+            при регистрации
+            до 15%</p>
+          <img src="img/illustration_1.png" alt="">
+        </div>
       </div>
     </section>
     <section class="newBooks">
@@ -167,7 +187,7 @@
         </div>
       </div>
       <div class="newBooksBlocks">
-        <div class="newBooksBlock">
+        <div class="newBooksBlock firstBookBlock" id="firstBookBlock">
           <div class="blockImage"><img src="img/image 146.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="background: #EEE9F7; color: #AC8EE3;">Бестселлер</p>
@@ -182,13 +202,13 @@
               <p class="rating"><i class="fa-solid fa-star">&nbsp;&nbsp;&nbsp;4.9</i></p>
               <p class="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;89% рекомендуют</p>
             </div>
-            <div>
+            <div class="favAndCart">
               <button class="cartButton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;В корзину</button>
               <button class="favButton"><i class="fa-solid fa-bookmark"></i></button>
             </div>
           </div>
         </div>
-        <div class="newBooksBlock">
+        <div class="newBooksBlock firstBookBlock" id="firstBookBlock">
           <div class="blockImage"><img src="img/image 140.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="background: #E2F6EC; color: #3DC47E">Новинка</p>
@@ -203,13 +223,13 @@
               <p class="rating"><i class="fa-solid fa-star">&nbsp;&nbsp;&nbsp;4.9</i></p>
               <p class="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;89% рекомендуют</p>
             </div>
-            <div>
+            <div class="favAndCart">
               <button class="cartButton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;В корзину</button>
               <button class="favButton"><i class="fa-solid fa-bookmark"></i></button>
             </div>
           </div>
         </div>
-        <div class="newBooksBlock third">
+        <div class="newBooksBlock third firstBookBlock" id="firstBookBlock">
           <div class="blockImage"><img src="img/image 145.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="visibility: hidden;">Бестселлеры</p>
@@ -226,13 +246,13 @@
               <p class="rating"><i class="fa-solid fa-star">&nbsp;&nbsp;&nbsp;4.9</i></p>
               <p class="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;89% рекомендуют</p>
             </div>
-            <div>
+            <div class="favAndCart">
               <button class="cartButton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;В корзину</button>
               <button class="favButton"><i class="fa-solid fa-bookmark"></i></button>
             </div>
           </div>
         </div>
-        <div class="newBooksBlock four">
+        <div class="newBooksBlock four firstBookBlock" id="firstBookBlock">
           <div class="blockImage"><img src="img/image 146.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="background: #EEE9F7; color: #AC8EE3;">Бестселлер</p>
@@ -259,9 +279,9 @@
       </div>
     </section>
     <section class="newsSubscribe">
-      <p>Скидка 200 ₽ при подписке на рассылку Издательства</p>
-      <input type="text">
-      <button></button>
+      <p class="newsText">Скидка 200 ₽ при подписке на рассылку Издательства</p>
+      <input type="text" class="newsInput">
+      <button class="newsButton">Подписаться</button>
     </section>
     <section class="newBooks">
       <div class="newBooksTitle">
@@ -272,7 +292,7 @@
         </div>
       </div>
       <div class="newBooksBlocks">
-        <div class="newBooksBlock">
+        <div class="newBooksBlock secondBookBlock" id="secondBookBlock">
           <div class="blockImage"><img src="img/image 146.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="background: #EEE9F7; color: #AC8EE3;">Бестселлер</p>
@@ -287,13 +307,13 @@
               <p class="rating"><i class="fa-solid fa-star">&nbsp;&nbsp;&nbsp;4.9</i></p>
               <p class="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;89% рекомендуют</p>
             </div>
-            <div>
+            <div class="favAndCart">
               <button class="cartButton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;В корзину</button>
               <button class="favButton"><i class="fa-solid fa-bookmark"></i></button>
             </div>
           </div>
         </div>
-        <div class="newBooksBlock">
+        <div class="newBooksBlock secondBookBlock" id="secondBookBlock">
           <div class="blockImage"><img src="img/image 140.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="background: #E2F6EC; color: #3DC47E">Новинка</p>
@@ -308,13 +328,13 @@
               <p class="rating"><i class="fa-solid fa-star">&nbsp;&nbsp;&nbsp;4.9</i></p>
               <p class="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;89% рекомендуют</p>
             </div>
-            <div>
+            <div class="favAndCart">
               <button class="cartButton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;В корзину</button>
               <button class="favButton"><i class="fa-solid fa-bookmark"></i></button>
             </div>
           </div>
         </div>
-        <div class="newBooksBlock third">
+        <div class="newBooksBlock third secondBookBlock" id="secondBookBlock">
           <div class="blockImage"><img src="img/image 145.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="visibility: hidden;">Бестселлеры</p>
@@ -331,13 +351,13 @@
               <p class="rating"><i class="fa-solid fa-star">&nbsp;&nbsp;&nbsp;4.9</i></p>
               <p class="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;89% рекомендуют</p>
             </div>
-            <div>
+            <div class="favAndCart">
               <button class="cartButton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;В корзину</button>
               <button class="favButton"><i class="fa-solid fa-bookmark"></i></button>
             </div>
           </div>
         </div>
-        <div class="newBooksBlock four">
+        <div class="newBooksBlock four secondBookBlock" id="secondBookBlock">
           <div class="blockImage"><img src="img/image 146.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="background: #EEE9F7; color: #AC8EE3;">Бестселлер</p>
@@ -364,10 +384,35 @@
       </div>
     </section>
     <section class="specials">
-      <div class="specialsBlock">f</div>
-      <div class="specialsBlock">f</div>
-      <div class="specialsBlock">f</div>
-      <div class="specialsBlock">f</div>
+      <div class="specialsBlock">
+        <img class="specialsImage" src="img/image 151.png">
+        <div>
+          <p class="specialsTitle">Быстрая доставка</p>
+          <p class="specialsDesc">Доставим бесплатно от 2000 ₽ 
+            по всей России</p>
+        </div>
+      </div>
+      <div class="specialsBlock">
+        <img class="specialsImage" src="img/image 150.png">
+        <div>
+          <p class="specialsTitle">Безопасная оплата</p>
+          <p class="specialsDesc">Плати безопасно и легко онлайн на нашем сайте.</p>
+        </div>
+      </div>
+      <div class="specialsBlock">
+        <img class="specialsImage" src="img/image 149.png">
+        <div>
+          <p class="specialsTitle">Бонусная программа</p>
+          <p class="specialsDesc">Дополнительная скидка 15% при регистрации</p>
+        </div>
+      </div>
+      <div class="specialsBlock">
+        <img class="specialsImage" src="img/image 152.png">
+        <div>
+          <p class="specialsTitle">Большой выбор</p>
+          <p class="specialsDesc">Ежегодно выходит в свет более 100 книг</p>
+        </div>
+      </div>
     </section>
   </main>
 </body>

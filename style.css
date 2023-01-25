@@ -255,7 +255,7 @@ main{
 }
 .newBooksBlock{
     width: 325px;
-    height: 500px;
+    height: 470px;
     border-right: 1px solid #1c294d44;
     border-bottom: 1px solid #1c294d44;
 }
@@ -304,6 +304,9 @@ main{
 .newBooksBlock .aboutBookMisc{
     margin-top: -40px;
 }
+.newBooksBlock:nth-child(2){
+    border-right: none;
+}
 .rating{
     background-color: #fbc12d28;
     color: #FBC02D;
@@ -343,7 +346,95 @@ main{
     line-height: 20px;
     color: #1C294D;
     border: none;
+    padding-bottom: 10px;
     background-color: white;
+}
+.newsText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 30px;
+    color: #FFFFFF;
+}
+.newsInput{
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 418px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+.specialsBlock{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 150px;
+    width: 300px;
+}
+.AdImage{
+    width: 360px;
+    height: 140px;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+}
+.AdImageFirst{
+    font-family: 'Roboto';
+    font-style: normal;
+    width: 180px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.AdImageSecond{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    width: 180px;
+    line-height: 25px;
+    color: rgba(28, 41, 77, 0.8);
+}
+.AdImage:first-child{
+    background-color:#6D378F;
+}
+.AdImage:nth-child(2){
+    background-color: #FFD8EF;;
+}
+.specialsImage{
+    width: 122px;
+    height: 75px;
+}
+.specialsTitle{
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #1C294D;
+}
+.specialsDesc{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #727272;
+}
+.newsButton{
+    background: #0288D1;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 137px;
+    height: 30px;
+    color: white;
+    text-align: center;
 }
 .newsSubscribe{
     width: 1300px;
@@ -353,6 +444,7 @@ main{
     height: 80px;
     display: flex;
     justify-content: ;
+    gap: 30px;
     align-items: center;
     margin-top: 30px;
 }
@@ -363,12 +455,6 @@ main{
     margin: 0 auto;
     margin-top: 30px;
 }
-.specialsBlock{
-    background-color: white;
-    height: 150px;
-    width: 250px;
-}
-
 @media (max-width: 768px){
     body{
         max-width: 375px;
@@ -380,6 +466,8 @@ main{
         max-width: 355px;
         margin-top: 10px;
         flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
     }
     .twoEqualThree{
         background-size: 355px 175px;
@@ -389,8 +477,22 @@ main{
         max-width: 355px;
         max-height: 190px;
     }
-    .someImages{
+    .newsSubscribe{
+        width: 355px;
+        height: 190px;
         gap: 10px;
+    }
+    .newsText{
+        padding-left: 10px;
+    }
+    .newsInput{
+        width: 335px;
+    }
+    .newsButton{
+        width: 335px;
+    }
+    .bookOfTheDay{
+        height: 550px;
     }
     .someImagesSmallMobile{
         flex-direction: column;
@@ -418,6 +520,16 @@ main{
         outline: none;
         border: none;
     }
+    .newBooksBlock{
+
+    }
+    .ratingAndLike{
+        
+    }
+    .like{
+        padding: 0px;
+        margin: 0px;
+    }
     .mobileSearchButton{
         border: none;
         width: 18px;
@@ -430,6 +542,12 @@ main{
     }
     .newBooks{
         max-width: 355px;
+    }
+    .bookOfTheDay{
+        height: 490px;
+    }
+    .aboutBookMisc{
+        margin-left: 10px;
     }
     .cartButtonMobile{
         border: none;
@@ -446,14 +564,27 @@ main{
         width: 355px;
         max-height: 170px;
     }
+    .favAndCart{
+    }
     .newBooksBlock{
         max-width: 177px;
+        height: 510px;
+    }
+    .specialsImage{
+        width: 147px;
+        height: 90px;
+    }
+    .favAndCart{
+        padding-top: 10px;
+    }
+    .cartButton{
+        width: 117px;
     }
     .ratingAndLike{
         flex-direction: column;
     }
-    .cartButton{
-        max-width: 117px;
+    .mobileDayButton{
+        width: 250px;
     }
 
 }
