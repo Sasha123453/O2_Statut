@@ -115,6 +115,9 @@ ul{
 .discountTag{
     color: #FF283D;
 }
+body{
+    margin: 0px;
+}
 main{
     background: #E5E5E5;
 }
@@ -308,9 +311,6 @@ main{
 .newBooksBlock .aboutBookMisc{
     margin-top: -40px;
 }
-.newBooksBlock:nth-child(2){
-    border-right: none;
-}
 .rating{
     background-color: #fbc12d28;
     color: #FBC02D;
@@ -375,6 +375,7 @@ main{
     align-items: center;
     background-color: white;
     height: 150px;
+    border-radius: 5px;
     width: 300px;
 }
 .AdImage{
@@ -428,6 +429,7 @@ main{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
+    width: 153px;
     line-height: 19px;
     color: #727272;
 }
@@ -459,6 +461,58 @@ main{
     margin: 0 auto;
     margin-top: 30px;
 }
+.news{
+    width: 1300px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.newsBlocks{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #1c294d44;
+}
+.newsBlock{
+    width: 433px;
+    border-right: 1px solid #1c294d44;
+}
+.newsMisc{
+    margin-left: 50px;
+}
+.newsDate{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(28, 41, 77, 0.5);
+}
+.newsTitle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    width: 320px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1C294D;
+}
+.newsDesc{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    width: 320px;
+    line-height: 20px;
+    color: #1C294D;
+    opacity: 0.8;
+}
+.newsButton{
+    background: #FFFFFF;
+    border: 1px solid rgba(28, 41, 77, 0.15);
+    border-radius: 5px;
+    color: #1C294D;
+}
 @media (max-width: 768px){
     body{
         max-width: 375px;
@@ -472,6 +526,9 @@ main{
         flex-direction: column;
         gap: 10px;
         padding-top: 10px;
+    }
+    .newBooksBlock:nth-child(2){
+        border-right: none;
     }
     .twoEqualThree{
         background-size: 355px 175px;
@@ -558,6 +615,16 @@ main{
         outline: none;
         background-color: white;
     }
+    .news{
+        width: 355px;
+        margin-left: 10px;
+    }
+    .newsMisc{
+        margin-left: 20px;
+    }
+    .newsBlock{
+        border: none;
+    }
     .specials{
         max-width: 375px;
         flex-direction: column;
@@ -577,6 +644,9 @@ main{
     .specialsImage{
         width: 147px;
         height: 90px;
+    }
+    .newsButton{
+        margin-left: -10px;
     }
     .favAndCart{
         padding-top: 10px;
