@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".twoEqualThree").slick({
-      prevArrow: '<button class="sliderButtons"><</button>',
-      nextArrow: '<button class="sliderButtons">></button>'
+      prevArrow: '<button class="sliderButtons firstArrow"><</button>',
+      nextArrow: '<button class="sliderButtons secondArrow">></button>'
     });
     $("#firstBooksBlocks").slick({ 
       slidesToShow: 4,
