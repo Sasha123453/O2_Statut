@@ -379,7 +379,7 @@ main{
     width: 300px;
 }
 .AdImage{
-    width: 360px;
+    width: 355px;
     height: 140px;
     justify-content: center;
     display: flex;
@@ -460,13 +460,14 @@ main{
     max-width: 1300px;
     margin: 0 auto;
     margin-top: 30px;
+    margin:
 }
 .news{
     width: 1300px;
-    margin: 0 auto;
     background-color: white;
     border-radius: 5px;
     margin-top: 30px;
+    margin-right: 2%;
 }
 .newsBlocks{
     display: flex;
@@ -474,8 +475,8 @@ main{
     border-top: 1px solid #1c294d44;
 }
 .newsBlock{
-    width: 433px;
     border-right: 1px solid #1c294d44;
+    width: 433px;
 }
 .newsMisc{
     margin-left: 50px;
@@ -513,12 +514,19 @@ main{
     border-radius: 5px;
     color: #1C294D;
 }
+.makeCenter{
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 768px){
     body{
-        max-width: 375px;
+        margin: 0 auto;
+        min-width: 400px;
     }
     .firstHeader,.secondHeader, .someImagesSmall, .someImagesSliderButtons{
         display: none;
+    }
+    main{
     }
     .someImages{
         max-width: 355px;
@@ -537,6 +545,7 @@ main{
         flex-direction: column;
         max-width: 355px;
         max-height: 190px;
+        display: none;
     }
     .newsSubscribe{
         width: 355px;
@@ -564,12 +573,19 @@ main{
         max-width: 355px;
         max-height: 175px;
     }
+    .newsBlock{
+        width: auto;
+    }
+    .newsBlocks{
+    }
     .third, .four{
         display: none;
     }
     .mobileHeader{
         display: flex;
         gap: 20px;
+        width: 355px;
+        margin: 0 auto;
         align-items: center;
     }
     .mobileSearch{
@@ -582,7 +598,6 @@ main{
         border: none;
     }
     .newBooksBlock{
-
     }
     .ratingAndLike{
         
@@ -629,11 +644,11 @@ main{
         max-width: 375px;
         flex-direction: column;
         gap: 10px;
-        margin-left: 10px;
     }
     .specialsBlock{
         width: 355px;
         max-height: 170px;
+        margin: 0 auto;
     }
     .favAndCart{
     }
