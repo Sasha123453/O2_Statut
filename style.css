@@ -134,6 +134,7 @@ main{
     border: 1px solid rgba(28, 41, 77, 0.15); 
     color: rgba(42, 61, 72, 0.5); 
     width: 28px;
+    outline: none;
     height: 28px;
 }
 .newBooksTitle .second{
@@ -153,17 +154,13 @@ main{
     max-width: 750px;
     max-height: 350px;
 }
-.someImagesSliderButtons{
-    display: flex;
-    justify-content: center;
-    gap: 600px;
-    position: relative;
-    bottom: 100%;
-    align-items: center;
-    height: 350px;
-}
 .someImagesSmallMobile{
     display: none;
+}
+.mobilePrefooter{
+    display: none;
+    width: 375px;
+    margin: 0 auto;
 }
 .someImagesBig{
     display: flex;
@@ -467,7 +464,6 @@ main{
     background-color: white;
     border-radius: 5px;
     margin-top: 30px;
-    margin-right: 2%;
 }
 .newsBlocks{
     display: flex;
@@ -477,6 +473,7 @@ main{
 .newsBlock{
     border-right: 1px solid #1c294d44;
     width: 433px;
+    height: 450px;
 }
 .newsMisc{
     margin-left: 50px;
@@ -508,6 +505,13 @@ main{
     color: #1C294D;
     opacity: 0.8;
 }
+.mobilePrefooter{
+    height: 150px;
+    display: none;
+}
+.mobileFooter{
+    display: none;
+}
 .newsButton{
     background: #FFFFFF;
     border: 1px solid rgba(28, 41, 77, 0.15);
@@ -518,15 +522,104 @@ main{
     display: flex;
     justify-content: center;
 }
+.mobileFooterFirst{
+    display: flex;
+    justify-content: space-between;
+}
+.mobileFooterFirstImage{
+    width: 11px;
+    height: 7px;
+    margin-top: 23px;
+}
+.someTextFirst{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(28, 41, 77, 0.5);
+}
+.someTextSecond{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    color: #1C294D;
+}
+.someText{
+    width: 335px; 
+    margin: 0 auto;
+}
+.desktopPrefooter{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    height: 60px;
+}
+.desktopFooter{
+    width: 1300px;
+    margin: 0 auto;
+}
+.footerLists{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-left: -35px;
+    padding-top: 20px;
+}
+.footerList{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(40, 47, 54, 0.8);
+}
+.footerList:first-child{
+    color: #1C294D;
+    font-weight: 500;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+}
+.lastList{
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    flex-direction: row;
+    line-height: 20px;
+    text-align: right;
+    gap: 30px;
+    color: rgba(28, 41, 77, 0.8);
+}
+.watermark{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(28, 41, 77, 0.5);
+}
+.newsBlocks .four{
+    border-right: none;
+}
 @media (max-width: 768px){
     body{
         margin: 0 auto;
-        min-width: 400px;
+        min-width: 420px;
     }
-    .firstHeader,.secondHeader, .someImagesSmall, .someImagesSliderButtons{
+    .firstHeader,.secondHeader, .someImagesSmall, .someImagesSliderButtons, .desktopFooter, .desktopPrefooter{
         display: none;
-    }
-    main{
     }
     .someImages{
         max-width: 355px;
@@ -537,6 +630,9 @@ main{
     }
     .newBooksBlock:nth-child(2){
         border-right: none;
+    }
+    .news{
+        margin-right: 2%;
     }
     .twoEqualThree{
         background-size: 355px 175px;
@@ -601,6 +697,12 @@ main{
     }
     .ratingAndLike{
         
+    }
+    .mobilePrefooter{
+        display: block;
+    }
+    .mobileFooter{
+        display: block;
     }
     .like{
         padding: 0px;
@@ -674,6 +776,17 @@ main{
     }
     .mobileDayButton{
         width: 250px;
+    }
+    .searchBar{
+        margin-left: 0px;
+    }
+    .search{
+        width: 270px;
+    }
+    .submitButton{
+        width: 50px;
+        position: relative;
+        right: 5%;
     }
 
 }
