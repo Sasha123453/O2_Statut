@@ -3,16 +3,21 @@ $(document).ready(function(){
       prevArrow: '<button class="sliderButtons"><</button>',
       nextArrow: '<button class="sliderButtons">></button>'
     });
-    $(".newBooksBlocks").slick({
+    $("#firstBooksBlocks").slick({ 
       slidesToShow: 4,
-      infinite: true,
-      prevArrow: '<button class="sliderButtons"><</button>',
-      nextArrow: '<button class="sliderButtons">></button>',
+      prevArrow: $("#firstBookBlockPrevious"),
+      nextArrow: $("#firstBookBlockNext"),
+    });
+    $("#secondBooksBlocks").slick({ 
+      slidesToShow: 4,
+      prevArrow: $("#secondBookBlockPrevious"),
+      nextArrow: $("#secondBookBlockNext"),
     });
     $(".newsBlocks").slick({
       slidesToShow: 3,
-      prevArrow: '<button class="sliderButtons"><</button>',
-      nextArrow: '<button class="sliderButtons">></button>',
+      prevArrow: $("#newsPrevious"),
+      nextArrow: $("#newsNext"),
+      
     });
 });
 

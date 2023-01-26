@@ -179,11 +179,11 @@
       <div class="newBooksTitle">
         <h3 style="line-height: 15px; padding-left: 15px;">Новые поступления</h3>
         <div style="padding: 15px;">
-          <button class="sliderButtons first" id="firstBookBlockPrevious"><</button>
-          <button class="sliderButtons second" id="firstBookBlockNext">></button>
+          <button class="sliderButtons first" onclick="return false" id="firstBookBlockPrevious"><</button>
+          <button class="sliderButtons second" onclick="return false" id="firstBookBlockNext">></button>
         </div>
       </div>
-      <div class="newBooksBlocks">
+      <div class="newBooksBlocks" id="firstBooksBlocks">
         <div class="newBooksBlock firstBookBlock" id="firstBookBlock">
           <div class="blockImage"><img src="img/image 146.png"></div>
           <div class="textPositioning">
@@ -216,6 +216,27 @@
             <p>Договор коммерческой концессии (франчайзинг). Граж...</p>
             <p class="miscOne">Багдасарян А.Ф.</p>
             <p class="miscPrice">372 ₽ </p>
+            <div class="ratingAndLike">
+              <p class="rating"><i class="fa-solid fa-star">&nbsp;&nbsp;&nbsp;4.9</i></p>
+              <p class="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;89% рекомендуют</p>
+            </div>
+            <div class="favAndCart">
+              <button class="cartButton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;В корзину</button>
+              <button class="favButton"><i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="newBooksBlock firstBookBlock" id="firstBookBlock">
+          <div class="blockImage"><img src="img/image 146.png"></div>
+          <div class="textPositioning">
+            <p class="newBlockSeller" style="background: #EEE9F7; color: #AC8EE3;">Бестселлер</p>
+            <p class="newBlockSeller" style="color: #FF4F52; background: #FFEEEE;">1+1=3</p>
+          </div>
+          <div class="aboutBookMisc">
+            <p class="miscOne">Корпоративное право</p>
+            <p>Инвестирование: способы, риски, субъекты : монография</p>
+            <p class="miscOne">Майфат А.В.</p>
+            <p class="miscPrice">4 450 ₽ </p>
             <div class="ratingAndLike">
               <p class="rating"><i class="fa-solid fa-star">&nbsp;&nbsp;&nbsp;4.9</i></p>
               <p class="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;89% рекомендуют</p>
@@ -284,12 +305,12 @@
       <div class="newBooksTitle">
         <h3 style="line-height: 15px; padding-left: 15px;">Готовятся к выходу</h3>
         <div style="padding: 15px;">
-          <button class="sliderButtons first" id="secondBookBlockPrevious"><</button>
-          <button class="sliderButtons second" id="secondBookBlockNext">></button>
+          <button class="sliderButtons first" onclick="return false" id="secondBookBlockPrevious"><</button>
+          <button class="sliderButtons second" onclick="return false" id="secondBookBlockNext">></button>
         </div>
       </div>
-      <div class="newBooksBlocks">
-        <div class="newBooksBlock secondBookBlock" id="secondBookBlock">
+      <div class="newBooksBlocks" id="secondBooksBlocks">
+        <div class="newBooksBlock firstBookBlock" id="firstBookBlock">
           <div class="blockImage"><img src="img/image 146.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="background: #EEE9F7; color: #AC8EE3;">Бестселлер</p>
@@ -310,7 +331,7 @@
             </div>
           </div>
         </div>
-        <div class="newBooksBlock secondBookBlock" id="secondBookBlock">
+        <div class="newBooksBlock firstBookBlock" id="firstBookBlock">
           <div class="blockImage"><img src="img/image 140.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="background: #E2F6EC; color: #3DC47E">Новинка</p>
@@ -331,7 +352,28 @@
             </div>
           </div>
         </div>
-        <div class="newBooksBlock third secondBookBlock" id="secondBookBlock">
+        <div class="newBooksBlock firstBookBlock" id="firstBookBlock">
+          <div class="blockImage"><img src="img/image 146.png"></div>
+          <div class="textPositioning">
+            <p class="newBlockSeller" style="background: #EEE9F7; color: #AC8EE3;">Бестселлер</p>
+            <p class="newBlockSeller" style="color: #FF4F52; background: #FFEEEE;">1+1=3</p>
+          </div>
+          <div class="aboutBookMisc">
+            <p class="miscOne">Корпоративное право</p>
+            <p>Инвестирование: способы, риски, субъекты : монография</p>
+            <p class="miscOne">Майфат А.В.</p>
+            <p class="miscPrice">4 450 ₽ </p>
+            <div class="ratingAndLike">
+              <p class="rating"><i class="fa-solid fa-star">&nbsp;&nbsp;&nbsp;4.9</i></p>
+              <p class="like"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;89% рекомендуют</p>
+            </div>
+            <div class="favAndCart">
+              <button class="cartButton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;В корзину</button>
+              <button class="favButton"><i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="newBooksBlock third firstBookBlock" id="firstBookBlock">
           <div class="blockImage"><img src="img/image 145.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="visibility: hidden;">Бестселлеры</p>
@@ -354,7 +396,7 @@
             </div>
           </div>
         </div>
-        <div class="newBooksBlock four secondBookBlock" id="secondBookBlock">
+        <div class="newBooksBlock four firstBookBlock" id="firstBookBlock">
           <div class="blockImage"><img src="img/image 146.png"></div>
           <div class="textPositioning">
             <p class="newBlockSeller" style="background: #EEE9F7; color: #AC8EE3;">Бестселлер</p>
@@ -416,8 +458,8 @@
         <div class="newBooksTitle">
           <h3 style="line-height: 15px; padding-left: 15px;">Новости</h3>
           <div style="padding: 15px;">
-            <button class="sliderButtons first" id="newsPrevious"><</button>
-            <button class="sliderButtons second" id="newsNext">></button>
+            <button class="sliderButtons first" onclick="return false" id="newsPrevious"><</button>
+            <button class="sliderButtons second" onclick="return false" id="newsNext">></button>
           </div>
         </div>
         <div class="newsBlocks">
@@ -430,7 +472,7 @@
               <button class="newsButton">Читать</button>
             </div>
           </div>
-            <div class="newsBlock third" id="newsBlock">
+           <div class="newsBlock third" id="newsBlock">
               <div class="blockImage"><img src="img/Rectangle 932.png"></div>
               <div class="newsMisc">
                 <p class="newsDate">16 июня 2020</p>
@@ -441,6 +483,15 @@
             </div>
             <div class="newsBlock four" id="newsBlock">
               <div class="blockImage"><img src="img/Rectangle 933.png"></div>
+              <div class="newsMisc">
+                <p class="newsDate">16 июня 2020</p>
+                <p class="newsTitle">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</p>
+                <p class="newsDesc">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+                <button class="newsButton">Читать</button>
+              </div>
+            </div>
+            <div class="newsBlock third" id="newsBlock">
+              <div class="blockImage"><img src="img/Rectangle 932.png"></div>
               <div class="newsMisc">
                 <p class="newsDate">16 июня 2020</p>
                 <p class="newsTitle">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</p>
