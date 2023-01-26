@@ -587,6 +587,15 @@ main{
     color: #1C294D;
     font-weight: 500;
 }
+.catalogButton{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1C294D;
+    font-family: 'Roboto';
+}
 .last{
     display: flex;
     justify-content: space-between;
@@ -629,7 +638,7 @@ main{
 @media (max-width: 768px){
     body{
         margin: 0 auto;
-        min-width: 420px;
+        min-width: 375px;
     }
     .firstArrow{
         top: 0px;
