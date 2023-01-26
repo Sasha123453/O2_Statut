@@ -147,7 +147,8 @@ main{
 }
 .someImagesSmall{
     display: flex;
-    gap: 30px;
+    gap: 40px;
+    margin-top: 10px;
 }
 .twoEqualThree{
     background-image: url("img/2=3.png");
@@ -296,7 +297,7 @@ main{
     text-align: center;
 }
 .textPositioning{
-    bottom: 43%;
+    bottom: 215px;
     left: 20%;
     position: relative;
 }
@@ -613,10 +614,33 @@ main{
 .newsBlocks .four{
     border-right: none;
 }
+.firstArrow, .secondArrow{
+    position: relative;
+}
+.firstArrow{
+    top: 170px;
+    z-index: 1;
+    left: 10px;
+}
+.secondArrow{
+    left: 710px;
+    bottom: 210px;
+}
 @media (max-width: 768px){
     body{
         margin: 0 auto;
         min-width: 420px;
+    }
+    .firstArrow{
+        top: 0px;
+        left: 0px;
+    }
+    .secondArrow{
+        bottom: 0px;
+        left: 0px;
+    }
+    .twoEqualThree  .sliderButtons{
+        visibility: hidden;
     }
     .firstHeader,.secondHeader, .someImagesSmall, .someImagesSliderButtons, .desktopFooter, .desktopPrefooter{
         display: none;
