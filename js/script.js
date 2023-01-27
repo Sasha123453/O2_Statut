@@ -1,8 +1,14 @@
 $(document).ready(function(){
+
+    $(".catalogButton").click(function(){
+      $(".catalog").toggle();
+    });
+
     $(".twoEqualThree").slick({
       prevArrow: '<button class="sliderButtons firstArrow"><</button>',
       nextArrow: '<button class="sliderButtons secondArrow">></button>'
     });
+
     $("#firstBooksBlocks").slick({ 
       slidesToShow: 4,
       prevArrow: $("#firstBookBlockPrevious"),
@@ -22,6 +28,7 @@ $(document).ready(function(){
         }
       ]
     });
+
     $("#secondBooksBlocks").slick({ 
       slidesToShow: 4,
       prevArrow: $("#secondBookBlockPrevious"),
@@ -41,6 +48,7 @@ $(document).ready(function(){
         }
       ]
     });
+
     $(".newsBlocks").slick({
       slidesToShow: 3,
       prevArrow: $("#newsPrevious"),
@@ -61,6 +69,7 @@ $(document).ready(function(){
       ]
       
     });
+
 });
 
 /*
